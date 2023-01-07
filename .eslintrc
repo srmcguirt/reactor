@@ -1,5 +1,19 @@
 {
   "extends": [
-    "@nuxtjs/eslint-config-typescript"
+    "@antfu"
+  ],
+  "overrides": [
+    {
+      "files": ["*.js", "*.mjs", "*.cjs"],
+      "extends": [
+        "plugin:jsdoc/recommended"
+      ]
+    },
+    {
+      "files": ["*.ts", "*.mts", "*.cts", "*.d.ts", "*.tsx"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
   ]
 }
