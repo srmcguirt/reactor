@@ -1,0 +1,34 @@
+{
+  "default": true,
+  "header-style": {
+    "style": "atx"
+  },
+  "ul-style": {
+    "style": "dash"
+  },
+  "ul-indent": {
+    "indent": 2
+  },
+  "line-length": false,
+  "no-duplicate-header": {
+    "siblings_only": true
+  },
+  "ol-prefix": {
+    "style": "ordered"
+  },
+  "no-inline-html": false,
+  "no-bare-urls": false,
+  "hr-style": {
+    "style": "---"
+  },
+  "fenced-code-language": false,
+  "emphasis-style": {
+    "style": "underscore"
+  },
+  "strong-style": {
+    "style": "asterisk"
+  },
+  "link-fragments": true,
+  "reference-links-images": true,
+  "link-image-reference-definitions": true
+}

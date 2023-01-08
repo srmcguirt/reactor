@@ -17,6 +17,6 @@
  */
 function extend(obj1, obj2) {
   for (const k2 in obj2) {
-      obj1[k2] === undefined ? obj1[k2] = obj2[k2] : undefined
+    obj1[k2] === undefined ? (obj1[k2] = obj2[k2]) : undefined;
   }
 }

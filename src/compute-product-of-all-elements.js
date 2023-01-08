@@ -7,17 +7,17 @@ function computeProductOfAllElements(arr) {
   /**
    * @type {number} prod
    */
-  let prod = 1
+  let prod = 1;
   // Check for 0
   if (arr.length <= 0) {
-    return 0
-  // Check for undefined
+    return 0;
+    // Check for undefined
   } else if (arr === undefined) {
-    return 0
+    return 0;
   } else {
     for (const e of arr) {
-      prod = prod * e
+      prod = prod * e;
     }
-    return prod
+    return prod;
   }
 }

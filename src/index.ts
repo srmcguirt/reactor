@@ -1,3 +1,3 @@
-export function testFunction (name: string) {
-  return `Hello ${name}`
+export function testFunction(name: string) {
+  return `Hello ${name}`;
 }

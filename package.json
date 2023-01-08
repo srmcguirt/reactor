@@ -5,7 +5,7 @@
   "repository": "@srmcguirt/reactor",
   "license": "MIT",
   "sideEffects": false,
-  "type": "module",
+  "type": "commonjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -20,22 +20,45 @@
     "dist"
   ],
   "scripts": {
+    "hooks:pre-commit": "pnpm lint && pnpm prettier-check",
+    "hooks:pre-push": "pnpm audit && pnpm test",
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "lint": "pnpm lint-js && pnpm lint-md",
+    "lint-js": "eslint \"**/*.js\"",
+    "lint-md": "markdownlint **/*.md --ignore node_modules",
     "prepack": "unbuild",
+    "prettier-check": "prettier --check --ignore-path=.gitignore .",
+    "prettier-fix": "prettier --write --ignore-path=.gitignore .",
     "release": "pnpm test && standard-version && git push --follow-tags && pnpm publish",
     "test": "pnpm lint && vitest run --coverage"
   },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-jsdoc": "39.6.4",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-playwright": "0.11.2",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-sonarjs": "0.17.0",
+    "eslint-plugin-unicorn": "45.0.2",
+    "eslint-plugin-vitest": "0.0.23"
+  },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.34.0",
-    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@eslint/eslintrc": "^1.4.1",
+    "@types/node": "^18.11.18",
     "@vitest/coverage-c8": "^0.26.3",
-    "eslint": "^8.31.0",
-    "eslint-plugin-jsdoc": "^39.6.4",
+    "bumpp": "^8.2.1",
+    "eslint": "8.21.0",
+    "esno": "^0.16.3",
+    "markdownlint-cli": "^0.33.0",
+    "pnpm": "^7.22.0",
+    "prettier": "^2.8.2",
+    "rimraf": "^3.0.2",
     "standard-version": "^9.5.0",
     "typescript": "^4.9.4",
     "unbuild": "^1.0.2",
+    "vite": "^4.0.4",
     "vitest": "^0.26.3"
   },
   "packageManager": "pnpm@7.22.0"

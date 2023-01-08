@@ -13,9 +13,9 @@
 function removeNumberValues(obj) {
   for (const key in obj) {
     if (typeof obj[key] === 'number') {
-      delete obj[key]
+      delete obj[key];
     }
   }
 
-  return obj
+  return obj;
 }

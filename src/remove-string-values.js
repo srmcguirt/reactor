@@ -6,9 +6,9 @@
 function removeStringValues(obj) {
   for (const key in obj) {
     if (typeof obj[key] === 'string') {
-      delete obj[key]
+      delete obj[key];
     }
   }
 
-  return obj
+  return obj;
 }

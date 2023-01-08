@@ -1,0 +1,99 @@
+{
+  "rules": {
+    "require-author": "error",
+    "require-bugs": "error",
+    "require-description": "error",
+    "require-engines": "error",
+    "require-files": "error",
+    "require-homepage": "error",
+    "require-keywords": "error",
+    "require-license": "error",
+    "require-name": "error",
+    "require-repository": "error",
+    "require-scripts": "error",
+    "require-version": "error",
+    "bin-type": "error",
+    "dependencies-type": "error",
+    "description-type": "error",
+    "devDependencies-type": "error",
+    "engines-type": "error",
+    "files-type": "error",
+    "homepage-type": "error",
+    "keywords-type": "error",
+    "license-type": "error",
+    "main-type": "error",
+    "name-type": "error",
+    "peerDependencies-type": "error",
+    "repository-type": "error",
+    "scripts-type": "error",
+    "version-type": "error",
+    "valid-values-author": ["error", ["Shane McGuirt <srmcguirt@gmail.com>"]],
+    "valid-values-engines": [
+      "error",
+      [
+        {
+          "node": "^14.15.0 || ^16.13.0 || >=18.0.0"
+        }
+      ]
+    ],
+    "valid-values-license": ["error", ["MIT", "LGPL-3.0"]],
+    "no-repeated-dependencies": "error",
+    "no-absolute-version-dependencies": [
+      "error",
+      {
+        "exceptions": [
+          "eslint-config-prettier",
+          "eslint-plugin-jsdoc",
+          "eslint-plugin-n",
+          "eslint-plugin-promise",
+          "eslint-plugin-sonarjs",
+          "eslint-plugin-unicorn"
+        ]
+      }
+    ],
+    "no-archive-dependencies": "error",
+    "no-file-dependencies": "error",
+    "no-git-dependencies": "error",
+    "no-tilde-version-dependencies": "error",
+    "prefer-alphabetical-dependencies": "error",
+    "prefer-caret-version-dependencies": [
+      "error",
+      {
+        "exceptions": [
+          "eslint-config-prettier",
+          "eslint-plugin-jsdoc",
+          "eslint-plugin-n",
+          "eslint-plugin-promise",
+          "eslint-plugin-sonarjs",
+          "eslint-plugin-unicorn"
+        ]
+      }
+    ],
+    "no-archive-devDependencies": "error",
+    "no-file-devDependencies": "error",
+    "no-git-devDependencies": "error",
+    "prefer-alphabetical-devDependencies": "error",
+    "prefer-alphabetical-peerDependencies": "error",
+    "prefer-scripts": [
+      "error",
+      [
+        "hooks-pre-commit",
+        "hooks-pre-push",
+        "lint",
+        "prettier-check",
+        "prettier-fix",
+        "test"
+      ]
+    ],
+    "description-format": [
+      "error",
+      {
+        "requireCapitalFirstLetter": true
+      }
+    ],
+    "name-format": "error",
+    "version-format": "error",
+    "no-duplicate-properties": "error",
+    "prefer-no-optionalDependencies": "error"
+  }
+}

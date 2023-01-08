@@ -7,15 +7,15 @@ function filterOddElements(arr) {
   /**
    * @type {Array<number>}
    */
-  let newArr = [...arr]
+  let newArr = [...arr];
   /**
    * Check if number is odd.
    * @param {number} n
    * @returns {boolean} isOdd
    */
-  const isOdd = n => n % 2 === 1
+  const isOdd = (n) => n % 2 === 1;
   /**
    * Return the filtered new array.
    */
-  return newArr.filter(isOdd)
+  return newArr.filter(isOdd);
 }

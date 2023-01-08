@@ -2,14 +2,18 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": true,
     "strict": true,
-    "outDir": "dist"
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "outDir": "dist",
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "config"],
+  "exclude": ["node_modules"]
 }

@@ -7,22 +7,22 @@ function countWords(str) {
   /**
    * @type {*}
    */
-  let count = {}
+  let count = {};
 
   if (str.length <= 0) {
-    return {}
+    return {};
   } else {
     /**
      * @const {*}
      */
-    const words = str.split(' ')
+    const words = str.split(' ');
     for (const word in words) {
-      count[words[word]] = count[words[word]] ? count[words[word]] + 1 : 1
+      count[words[word]] = count[words[word]] ? count[words[word]] + 1 : 1;
     }
   }
 
   // make sure to return
-  return count
+  return count;
 }
 
 var output = countWords('ask a bunch get a bunch');

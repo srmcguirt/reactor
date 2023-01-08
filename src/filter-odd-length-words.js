@@ -9,8 +9,7 @@ function filterOddLengthWords(words) {
    * @param {string} str
    * @returns boolean
    */
-  const isOdd = str => str.length % 2 === 1
+  const isOdd = (str) => str.length % 2 === 1;
 
-  return words.filter(isOdd)
-
+  return words.filter(isOdd);
 }

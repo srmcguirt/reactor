@@ -8,9 +8,9 @@
 function removeNumbersLargerThan(num, obj) {
   for (const key in obj) {
     if (obj[key] > num) {
-      delete obj[key]
+      delete obj[key];
     }
   }
 
-  return obj
+  return obj;
 }

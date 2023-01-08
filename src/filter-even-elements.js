@@ -7,15 +7,15 @@ function filterEvenElements(arr) {
   /**
    * @type {Array<number>}
    */
-  let newArr = [...arr]
+  let newArr = [...arr];
   /**
    * Check if number is even.
    * @param {number} n
    * @returns {boolean} isEven
    */
-  const isEven = n => n % 2 === 0
+  const isEven = (n) => n % 2 === 0;
   /**
    * Return the filtered new array.
    */
-  return newArr.filter(isEven)
+  return newArr.filter(isEven);
 }

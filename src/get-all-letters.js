@@ -5,8 +5,8 @@
  */
 function getAllLetters(str) {
   if (str.length === 0) {
-      return []
+    return [];
   }
 
-  return str.split('')
+  return str.split('');
 }

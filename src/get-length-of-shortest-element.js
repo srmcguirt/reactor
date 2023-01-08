@@ -7,12 +7,12 @@ function getLengthOfShortestElement(arr) {
   /**
    * @type {number}
    */
-  let shortest = 0
+  let shortest = 0;
 
   if (arr.length <= 0) {
-    return shortest
+    return shortest;
   } else {
-    shortest = Math.min(...arr.map(v => v.length))
-    return shortest
+    shortest = Math.min(...arr.map((v) => v.length));
+    return shortest;
   }
 }

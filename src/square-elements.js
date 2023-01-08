@@ -7,9 +7,9 @@ function squareElements(arr) {
   /**
    * @type Array<number>
    */
-  let newArr = [...arr]
+  let newArr = [...arr];
   /**
    * Map and use Math pow to square.
    */
-  return newArr.map(v => Math.pow(v, 2))
+  return newArr.map((v) => Math.pow(v, 2));
 }

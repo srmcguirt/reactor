@@ -15,9 +15,9 @@ function removeArrayValues(obj) {
   for (const key in obj) {
     // check for prop type and delete
     if (Array.isArray(obj[key])) {
-      delete obj[key]
+      delete obj[key];
     }
   }
   // return original object
-  return obj
+  return obj;
 }

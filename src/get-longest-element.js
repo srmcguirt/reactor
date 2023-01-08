@@ -7,17 +7,17 @@
  *  var arr = ['one', 'two', 'three']
  */
 function getLongestElement(arr) {
-  let result = ''
+  let result = '';
   if (arr.length <= 0) {
-    return result
+    return result;
   } else {
     result = arr.reduce(
       /**
        * @param {*} p
        * @param {*} c
        */
-      (p, c) => (p.length > c.length) ? p : c
-    )
-    return result
+      (p, c) => (p.length > c.length ? p : c)
+    );
+    return result;
   }
 }

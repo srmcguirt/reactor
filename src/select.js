@@ -9,32 +9,22 @@ function select(arr, obj) {
   /**
    * @type {object} newObj
    */
-  let newObj = { ...obj}
+  let newObj = { ...obj };
   /**
    *
    * @param {string} str
    * @return {string | undefined} hasKey
    */
-  const hasKey = str => arr.find(e => e === str)
+  const hasKey = (str) => arr.find((e) => e === str);
 
   for (const e in newObj) {
     if (!hasKey(String(e))) {
-      delete newObj[e]
+      delete newObj[e];
     }
   }
 
-  return newObj
+  return newObj;
 }
-
-
-
-
-
-
-
-
-
-
 
 var arr = ['a', 'c', 'e'];
 var obj = {
