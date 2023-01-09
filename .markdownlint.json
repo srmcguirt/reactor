@@ -17,6 +17,7 @@
   "ol-prefix": {
     "style": "ordered"
   },
+  "no-duplicate-heading": false,
   "no-inline-html": false,
   "no-bare-urls": false,
   "no-multiple-blanks": false,
