@@ -27,12 +27,4 @@ function select(array, object) {
   return newObject
 }
 
-const array = ['a', 'c', 'e']
-const object = {
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4,
-}
-const output = select(array, object)
-console.log(output) // --> { a: 1, c: 3 }
+export { select }
