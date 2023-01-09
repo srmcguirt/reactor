@@ -5,14 +5,12 @@
  * @returns {number[]}       Array with squared elements.
  */
 function squareElements(array) {
-  /**
-   * @type {number[]}
-   */
+  /** @constant {number[]} */
   const newArray = [...array]
-  /**
-   * Map and use Math pow to square.
-   */
-  return newArray.map(v => v ** 2)
+
+  /** @constant {number} */
+  const squareExponent = 2
+  return newArray.map(v => v ** squareExponent)
 }
 
 export { squareElements }
