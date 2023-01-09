@@ -35,7 +35,7 @@
     "build": "unbuild",
     "dev": "vitest dev",
     "lint": "pnpm lint-js && pnpm lint-md && pnpm lint-package",
-    "lint-js": "eslint \"{src,config}/*.js\" --fix",
+    "lint-js": "eslint . --fix",
     "lint-md": "markdownlint **/*.md --ignore node_modules",
     "lint-package": "npmPkgJsonLint .",
     "prepack": "unbuild",
