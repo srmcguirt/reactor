@@ -1,11 +1,11 @@
-# packageName
-
+# @srmcguirt/reactor
+[![code-style]]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
 
-> Package description
+> Body of work for Hack Reactor, Vet Prep, and pre-course engineering
 
 ## Usage
 
@@ -46,7 +46,7 @@ Made with 💛
 Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
-
+[code-style]: https://badgen.net/badge/code%20style/standard/f2a
 [npm-version-src]: https://img.shields.io/npm/v/srmcguirt/reactor?style=flat-square
 [npm-version-href]: https://npmjs.com/package/srmcguirt/reactor
 [npm-downloads-src]: https://img.shields.io/npm/dm/srmcguirt/reactor?style=flat-square
