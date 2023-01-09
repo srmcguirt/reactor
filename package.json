@@ -1,11 +1,21 @@
 {
   "name": "@srmcguirt/reactor",
   "version": "0.0.0",
-  "description": "",
+  "description": "Hack Reactor Work",
+  "author": "Shane McGuirt <srmcguirt@gmail.com>",
   "repository": "@srmcguirt/reactor",
+  "homepage": "https://github.com/srmcguirt/reactor#readme",
+  "keywords": [
+    "hack",
+    "reactor",
+    "work"
+  ],
   "license": "MIT",
   "sideEffects": false,
-  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/srmcguirt/reactor/issues"
+  },
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -24,9 +34,10 @@
     "hooks:pre-push": "pnpm audit && pnpm test",
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "pnpm lint-js && pnpm lint-md",
-    "lint-js": "eslint \"**/*.js\"",
+    "lint": "pnpm lint-js && pnpm lint-md && pnpm lint-package",
+    "lint-js": "eslint \"{src,config}/*.js\" --fix",
     "lint-md": "markdownlint **/*.md --ignore node_modules",
+    "lint-package": "npmPkgJsonLint .",
     "prepack": "unbuild",
     "prettier-check": "prettier --check --ignore-path=.gitignore .",
     "prettier-fix": "prettier --write --ignore-path=.gitignore .",
@@ -34,24 +45,17 @@
     "test": "pnpm lint && vitest run --coverage"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.2.0",
-    "eslint-config-prettier": "8.6.0",
-    "eslint-plugin-jsdoc": "39.6.4",
-    "eslint-plugin-n": "15.6.0",
-    "eslint-plugin-playwright": "0.11.2",
-    "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-sonarjs": "0.17.0",
-    "eslint-plugin-unicorn": "45.0.2",
-    "eslint-plugin-vitest": "0.0.23"
+    "@antfu/eslint-config": "^0.34.0",
+    "eslint-plugin-jsdoc": "^39.6.4"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^1.4.1",
     "@types/node": "^18.11.18",
     "@vitest/coverage-c8": "^0.26.3",
     "bumpp": "^8.2.1",
-    "eslint": "8.21.0",
+    "eslint": "^8.28.0",
     "esno": "^0.16.3",
     "markdownlint-cli": "^0.33.0",
+    "npm-package-json-lint": "^6.4.0",
     "pnpm": "^7.22.0",
     "prettier": "^2.8.2",
     "rimraf": "^3.0.2",
@@ -61,5 +65,15 @@
     "vite": "^4.0.4",
     "vitest": "^0.26.3"
   },
-  "packageManager": "pnpm@7.22.0"
+  "engines": {
+    "node":"^14.15.0 || ^16.13.0 || >=18.0.0"
+  },
+  "packageManager": "pnpm@7.22.0",
+  "pnpm": {
+    "hooks": {
+      "pre-commit": [
+        "pnpm lint && pnpm prettier-check"
+      ]
+    }
+  }
 }

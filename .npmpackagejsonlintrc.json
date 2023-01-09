@@ -38,53 +38,18 @@
     ],
     "valid-values-license": ["error", ["MIT", "LGPL-3.0"]],
     "no-repeated-dependencies": "error",
-    "no-absolute-version-dependencies": [
-      "error",
-      {
-        "exceptions": [
-          "eslint-config-prettier",
-          "eslint-plugin-jsdoc",
-          "eslint-plugin-n",
-          "eslint-plugin-promise",
-          "eslint-plugin-sonarjs",
-          "eslint-plugin-unicorn"
-        ]
-      }
-    ],
+    "no-absolute-version-dependencies": "error",
     "no-archive-dependencies": "error",
     "no-file-dependencies": "error",
     "no-git-dependencies": "error",
     "no-tilde-version-dependencies": "error",
     "prefer-alphabetical-dependencies": "error",
-    "prefer-caret-version-dependencies": [
-      "error",
-      {
-        "exceptions": [
-          "eslint-config-prettier",
-          "eslint-plugin-jsdoc",
-          "eslint-plugin-n",
-          "eslint-plugin-promise",
-          "eslint-plugin-sonarjs",
-          "eslint-plugin-unicorn"
-        ]
-      }
-    ],
+    "prefer-caret-version-dependencies": "error",
     "no-archive-devDependencies": "error",
     "no-file-devDependencies": "error",
     "no-git-devDependencies": "error",
     "prefer-alphabetical-devDependencies": "error",
     "prefer-alphabetical-peerDependencies": "error",
-    "prefer-scripts": [
-      "error",
-      [
-        "hooks-pre-commit",
-        "hooks-pre-push",
-        "lint",
-        "prettier-check",
-        "prettier-fix",
-        "test"
-      ]
-    ],
     "description-format": [
       "error",
       {

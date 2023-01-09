@@ -1,15 +1,18 @@
 /**
  * Given an array, return a new array where each element is squared.
- * @param {Array<number>} arr
- * @returns Array<number> newArr
+ *
+ * @param   {number[]} array Input array.
+ * @returns {number[]}       Array with squared elements.
  */
-function squareElements(arr) {
+function squareElements(array) {
   /**
-   * @type Array<number>
+   * @type {number[]}
    */
-  let newArr = [...arr];
+  const newArray = [...array]
   /**
    * Map and use Math pow to square.
    */
-  return newArr.map((v) => Math.pow(v, 2));
+  return newArray.map(v => v ** 2)
 }
+
+export { squareElements }

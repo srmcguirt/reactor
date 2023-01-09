@@ -1,23 +1,21 @@
 /**
  * Compute the product of all given numbers in array.
- * @param {Array<number>} arr
- * @returns {number} prod
+ *
+ * @param   {number[]} array Input array.
+ * @returns {number}         Product of all numbers in array.
  */
-function computeProductOfAllElements(arr) {
+export function computeProductOfAllElements(array) {
   /**
-   * @type {number} prod
+   * @type {number}
    */
-  let prod = 1;
+  let product = 1
   // Check for 0
-  if (arr.length <= 0) {
-    return 0;
+  if (array.length <= 0)
+    return 0
     // Check for undefined
-  } else if (arr === undefined) {
-    return 0;
-  } else {
-    for (const e of arr) {
-      prod = prod * e;
-    }
-    return prod;
-  }
+
+  for (const element of array)
+    product *= element
+
+  return product
 }

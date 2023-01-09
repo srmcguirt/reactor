@@ -1,7 +1,7 @@
 {
   "overrides": [
     {
-      "files": ["*.js", "*.css"],
+      "files": ["*.css"],
       "options": {
         "tabWidth": 2
       }

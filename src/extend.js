@@ -1,8 +1,9 @@
 /**
  * Add props from second object to first without overwrite.
- * @param {*} obj1
- * @param {*} obj2
- * @returns {void}
+ *
+ * @param   {Object<string, any>} object1 Object to add props to.
+ * @param   {Object<string, any>} object2 Object to add props from.
+ * @returns {Object<string, any>}         Object with added props.
  * @example
  *  var obj1 = {
  *    a: 1,
@@ -15,8 +16,19 @@
  *
  *  extend(obj1, obj2)
  */
-function extend(obj1, obj2) {
-  for (const k2 in obj2) {
-    obj1[k2] === undefined ? (obj1[k2] = obj2[k2]) : undefined;
+function extend(object1, object2) {
+  /**
+   * @constant {*}
+   */
+  for (const key in object2) {
+    if (object1[key] === undefined)
+      object1[key] = object2[key]
+
+    else if (object1[key] === object2[key])
+      continue
   }
+
+  return object1
 }
+
+export { extend }
