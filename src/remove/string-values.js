@@ -12,4 +12,5 @@ function removeStringValues(object) {
 
   return object
 }
+
 export { removeStringValues }
