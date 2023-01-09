@@ -1,5 +1,5 @@
 # @srmcguirt/reactor
-[![code-style]]
+![code-style]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Github Actions][github-actions-src]][github-actions-href]
