@@ -17,5 +17,24 @@ module.exports = {
         './jsdoc-config.cjs',
       ],
     },
+    {
+      files: [
+        '**/*.md/*.*',
+      ],
+      rules: {
+        'no-empty-pattern': 'off',
+        'no-restricted-imports': 'off',
+        'no-restricted-syntax': 'off',
+        'no-labels': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      files: ['README.md'],
+      rules: {
+        'no-empty-pattern': 'off',
+      },
+    },
   ],
 }

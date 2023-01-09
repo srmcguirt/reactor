@@ -13,23 +13,23 @@ Install package:
 
 ```sh
 # npm
-npm install packageName
+npm install @srmcguirt/reactor
 
 # yarn
-yarn add packageName
+yarn add @srmcguirt/reactor
 
 # pnpm
-pnpm install packageName
+pnpm install @srmcguirt/reactor
 ```
 
 Import:
 
 ```js
 // ESM
-import {} from 'packageName';
+import {} from '@srmcguirt/reactor'
 
 // CommonJS
-const {} = require('packageName');
+const {} = require('@srmcguirt/reactor')
 ```
 
 ## 💻 Development
@@ -47,11 +47,11 @@ Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/packageName?style=flat-square
-[npm-version-href]: https://npmjs.com/package/packageName
-[npm-downloads-src]: https://img.shields.io/npm/dm/packageName?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/packageName
-[github-actions-src]: https://img.shields.io/github/workflow/status/unjs/packageName/ci/main?style=flat-square
-[github-actions-href]: https://github.com/unjs/packageName/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/gh/unjs/packageName/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/unjs/packageName
+[npm-version-src]: https://img.shields.io/npm/v/srmcguirt/reactor?style=flat-square
+[npm-version-href]: https://npmjs.com/package/srmcguirt/reactor
+[npm-downloads-src]: https://img.shields.io/npm/dm/srmcguirt/reactor?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/srmcguirt/reactor
+[github-actions-src]: https://img.shields.io/github/workflow/status/srmcguirt/reactor/ci/main?style=flat-square
+[github-actions-href]: https://github.com/srmcguirt/reactor/actions?query=workflow%3Aci
+[codecov-src]: https://img.shields.io/codecov/c/gh/srmcguirt/reactor/main?style=flat-square
+[codecov-href]: https://codecov.io/gh/srmcguirt/reactor

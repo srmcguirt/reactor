@@ -1,26 +1,27 @@
 {
   "name": "@srmcguirt/reactor",
+  "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@7.22.0",
   "description": "Hack Reactor Work",
   "author": "Shane McGuirt <srmcguirt@gmail.com>",
-  "repository": "@srmcguirt/reactor",
+  "license": "MIT",
   "homepage": "https://github.com/srmcguirt/reactor#readme",
+  "repository": "@srmcguirt/reactor",
+  "bugs": {
+    "url": "https://github.com/srmcguirt/reactor/issues"
+  },
   "keywords": [
     "hack",
     "reactor",
     "work"
   ],
-  "license": "MIT",
   "sideEffects": false,
-  "bugs": {
-    "url": "https://github.com/srmcguirt/reactor/issues"
-  },
-  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -29,13 +30,16 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "^14.15.0 || ^16.13.0 || >=18.0.0"
+  },
   "scripts": {
     "hooks:pre-commit": "pnpm lint && pnpm prettier-check",
     "hooks:pre-push": "pnpm audit && pnpm test",
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "pnpm lint-js && pnpm lint-md && pnpm lint-package",
-    "lint-js": "eslint . --fix",
+    "lint": "pnpm lint-code && pnpm lint-md && pnpm lint-package",
+    "lint-code": "eslint --cache . --fix",
     "lint-md": "markdownlint **/*.md --ignore node_modules",
     "lint-package": "npmPkgJsonLint .",
     "prepack": "unbuild",
@@ -54,26 +58,25 @@
     "bumpp": "^8.2.1",
     "eslint": "^8.28.0",
     "esno": "^0.16.3",
+    "lint-staged": "^13.1.0",
     "markdownlint-cli": "^0.33.0",
     "npm-package-json-lint": "^6.4.0",
     "pnpm": "^7.22.0",
     "prettier": "^2.8.2",
     "rimraf": "^3.0.2",
+    "simple-git-hooks": "^2.8.1",
     "standard-version": "^9.5.0",
     "typescript": "^4.9.4",
     "unbuild": "^1.0.2",
     "vite": "^4.0.4",
     "vitest": "^0.26.3"
   },
-  "engines": {
-    "node":"^14.15.0 || ^16.13.0 || >=18.0.0"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@7.22.0",
-  "pnpm": {
-    "hooks": {
-      "pre-commit": [
-        "pnpm lint && pnpm prettier-check"
-      ]
-    }
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --cache --fix"
+    ]
   }
 }
