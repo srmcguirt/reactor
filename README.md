@@ -6,7 +6,7 @@
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
 
-> Body of work for Hack Reactor, Vet Prep, and pre-course engineering
+> Body of work for Hack Reactor, Vet Prep, and pre-course engineering.
 
 ## Usage
 
@@ -48,10 +48,10 @@ Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
 [code-style]: https://badgen.net/badge/code%20style/standard/f2a
-[npm-version-src]: https://img.shields.io/npm/v/srmcguirt/reactor?style=flat-square
-[npm-version-href]: https://npmjs.com/package/srmcguirt/reactor
-[npm-downloads-src]: https://img.shields.io/npm/dm/srmcguirt/reactor?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/srmcguirt/reactor
+[npm-version-src]: https://img.shields.io/npm/v/@srmcguirt/reactor?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@srmcguirt/reactor
+[npm-downloads-src]: https://img.shields.io/npm/dm/@srmcguirt/reactor?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@srmcguirt/reactor
 [github-actions-src]: https://img.shields.io/github/workflow/status/srmcguirt/reactor/ci/main?style=flat-square
 [github-actions-href]: https://github.com/srmcguirt/reactor/actions?query=workflow%3Aci
 [codecov-src]: https://img.shields.io/codecov/c/gh/srmcguirt/reactor/main?style=flat-square
