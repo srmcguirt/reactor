@@ -12,10 +12,10 @@ function filterEvenElements(array) {
   /**
    * Check if number is even.
    *
-   * @param   {number}  n Input number.
-   * @returns {boolean}   True if even, false if odd.
+   * @param   {number}  num Input number.
+   * @returns {boolean}     True if even, false if otherwise.
    */
-  const isEven = n => n % 2 === 0
+  const isEven = num => num % 2 === 0
   /**
    * Return the filtered new array.
    */

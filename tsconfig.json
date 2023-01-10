@@ -18,8 +18,7 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "ESNext",
+    "target": "ESNext"
   },
-  "include": ["src", "config"],
   "exclude": ["node_modules"]
 }

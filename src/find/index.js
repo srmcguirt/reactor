@@ -1,1 +1,5 @@
 export * from './min-length-of-three-words'
+export * from './max-length-of-three-words'
+export * from './shortest-of-three-words'
+export * from './smallest-element'
+export * from './shortest-element'

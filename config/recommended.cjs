@@ -2,6 +2,10 @@ module.exports = {
   extends: [
     '@antfu',
   ],
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: '../tsconfig.json',
+  },
   rules: {
     'no-console': 'off',
     'no-unused-expressions': ['error', {
@@ -16,25 +20,6 @@ module.exports = {
       extends: [
         './jsdoc-config.cjs',
       ],
-    },
-    {
-      files: [
-        '**/*.md/*.*',
-      ],
-      rules: {
-        'no-empty-pattern': 'off',
-        'no-restricted-imports': 'off',
-        'no-restricted-syntax': 'off',
-        'no-labels': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-        '@typescript-eslint/no-var-requires': 'off',
-      },
-    },
-    {
-      files: ['README.md'],
-      rules: {
-        'no-empty-pattern': 'off',
-      },
     },
   ],
 }

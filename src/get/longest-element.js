@@ -7,10 +7,8 @@
  *
  *  var arr = ['one', 'two', 'three']
  */
-export function getLongestElement(array) {
-  /**
-   * @type {string}
-   */
+function getLongestElement(array) {
+  /** @type {string} */
   let longestElement = ''
 
   if (array.length <= 0)
@@ -24,5 +22,8 @@ export function getLongestElement(array) {
      */
     (prev, curr) => (prev.length > curr.length ? prev : curr),
   )
+
   return longestElement
 }
+
+export { getLongestElement }

@@ -8,9 +8,10 @@ function squareElements(array) {
   /** @constant {number[]} */
   const newArray = [...array]
 
+  // no magic numbers
   /** @constant {number} */
   const squareExponent = 2
-  return newArray.map(v => v ** squareExponent)
+  return newArray.map(value => value ** squareExponent)
 }
 
 export { squareElements }

@@ -7,13 +7,15 @@
  * @returns {number}       The length of the shortest word.
  */
 function findMinLengthOfThreeWords(word1, word2, word3) {
-  /** @type {string[]} */
-  const arr = [...word1, ...word2, ...word3]
+  /** @constant {string[]} */
+  const arr = [word1, word2, word3]
 
-  const mappedArr = arr.map((v, i) => {
-    return { i, v, length: v.length }
+  /** @constant {Object<string,number>} */
+  const mappedArr = arr.map((value) => {
+    return { length: value.length }
   })
 
+  /** @constant {Object<string,number>} */
   const reduced = mappedArr.reduce((prev, curr) => {
     return prev.length < curr.length ? prev : curr
   })

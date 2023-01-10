@@ -4,10 +4,8 @@
  * @param   {string[]} array Input array.
  * @returns {number}         Shortest element value.
  */
-export function getLengthOfShortestElement(array) {
-  /**
-   * @type {number}
-   */
+function getLengthOfShortestElement(array) {
+  /** @type {number} */
   let shortestElement = 0
 
   if (array.length <= 0)
@@ -16,3 +14,5 @@ export function getLengthOfShortestElement(array) {
   shortestElement = Math.min(...array.map(v => v.length))
   return shortestElement
 }
+
+export { getLengthOfShortestElement }

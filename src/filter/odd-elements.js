@@ -12,10 +12,10 @@ function filterOddElements(array) {
   /**
    * Check if number is odd.
    *
-   * @param   {number}  n Input number.
-   * @returns {boolean}   True if odd, false if even.
+   * @param   {number}  num Input number.
+   * @returns {boolean}     True if odd, false if otherwise.
    */
-  const isOdd = n => n % 2 === 1
+  const isOdd = num => num % 2 === 1
   /**
    * Return the filtered new array.
    */

@@ -7,9 +7,7 @@
  */
 function select(array, object) {
   // If keys in array, but not in object, then ignore.
-  /**
-   * @constant {Object<string, any>} newObj
-   */
+  /** @constant {Object<string, any>} newObj */
   const newObject = { ...object }
   /**
    * Check if key is in array.
