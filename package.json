@@ -2,8 +2,8 @@
   "name": "@srmcguirt/reactor",
   "type": "module",
   "version": "0.0.6",
-  "packageManager": "pnpm@7.23.0",
-  "description": "Hack Reactor Work",
+  "packageManager": "pnpm@7.24.2",
+  "description": "Hack Reactor coursework API",
   "author": "Shane McGuirt <srmcguirt@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/srmcguirt/reactor#readme",
@@ -34,19 +34,12 @@
     "node": "^14.15.0 || ^16.13.0 || >=18.0.0"
   },
   "scripts": {
-    "hooks:pre-commit": "pnpm lint && pnpm prettier-check",
-    "hooks:pre-push": "pnpm audit && pnpm test",
     "build": "unbuild",
     "dev": "vitest dev",
-    "lint": "pnpm lint-code && pnpm lint-md && pnpm lint-package",
-    "lint-code": "eslint --cache . --fix",
-    "lint-md": "markdownlint **/*.md --ignore node_modules",
-    "lint-package": "npmPkgJsonLint .",
+    "lint": "eslint --cache . --fix",
     "prepack": "unbuild",
-    "prettier-check": "prettier --check --ignore-path=.gitignore .",
-    "prettier-fix": "prettier --write --ignore-path=.gitignore .",
     "release": "pnpm test && standard-version && git push --follow-tags && pnpm publish",
-    "test": "pnpm lint && vitest run --coverage"
+    "test": "vitest run --coverage"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.1",
@@ -57,10 +50,7 @@
     "eslint-plugin-jsdoc": "^39.6.4",
     "esno": "^0.16.3",
     "lint-staged": "^13.1.0",
-    "markdownlint-cli": "^0.33.0",
-    "npm-package-json-lint": "^6.4.0",
     "pnpm": "^7.23.0",
-    "prettier": "^2.8.2",
     "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.8.1",
     "standard-version": "^9.5.0",
@@ -73,10 +63,11 @@
     "access": "public"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "pre-push": "pnpm audit && pnpm test"
   },
   "lint-staged": {
-    "*.{js,ts}": [
+    "*.{js,ts,md,json}": [
       "eslint --cache --fix"
     ]
   }
