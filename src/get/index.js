@@ -1,6 +1,7 @@
 export * from './all-elements-but-nth'
 export * from './all-letters'
 export * from './all-words'
+export * from './elements-that-equal-10-at-property'
 export * from './index-of'
 export * from './length-of-longest-element'
 export * from './length-of-shortest-element'
