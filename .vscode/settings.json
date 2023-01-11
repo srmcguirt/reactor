@@ -13,5 +13,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
+  ],
+  "exportall.config.folderListener": [
+    "/src/get",
+    "/src/join"
   ]
 }
