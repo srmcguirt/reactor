@@ -1,15 +1,24 @@
 /**
  * Given a string, return an object with a character count key-pair.
  *
- * @param   {string} str Input string.
- * @returns {*}          Object paired letter and count value.
+ * @param   {string}                       str Input string.
+ * @returns {Object<string, number | any>}     Object paired letter and count value.
  */
 function countAllCharacters(str) {
-  if (str.length === 0)
-    return {}
+  /** @type {Object<string, number>} */
+  const result = {}
 
-  else
+  if (str.length === 0) {
     return {}
+  }
+  else {
+    /** @constant {string[]} */
+    const arr = str.split('')
+    for (const char in arr)
+      result[arr[char]] = result[arr[char]] ? result[arr[char]] + 1 : 1
+  }
+
+  return result
 }
 
 export { countAllCharacters }

@@ -2,7 +2,7 @@
   "name": "@srmcguirt/reactor",
   "type": "module",
   "version": "0.0.6",
-  "packageManager": "pnpm@7.24.2",
+  "packageManager": "pnpm@7.24.3",
   "description": "Hack Reactor coursework API",
   "author": "Shane McGuirt <srmcguirt@gmail.com>",
   "license": "MIT",

@@ -1,4 +1,5 @@
 export * from './array-values'
+export * from './element'
 export * from './even-values'
 export * from './number-values'
 export * from './numbers-larger-than'
