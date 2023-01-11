@@ -17,5 +17,8 @@
   "exportall.config.folderListener": [
     "/src/get",
     "/src/join"
+  ],
+  "conventionalCommits.scopes": [
+    "get"
   ]
 }
