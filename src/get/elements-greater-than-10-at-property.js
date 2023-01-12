@@ -23,10 +23,4 @@ function getElementsGreaterThan10AtProperty(obj, key) {
     return obj[key].filter(value => value > ten)
 }
 
-const obj = {
-  key: [1, 20, 30],
-}
-const output = getElementsGreaterThan10AtProperty(obj, 'key')
-console.log(output) // --> [20, 30]
-
 export { getElementsGreaterThan10AtProperty }

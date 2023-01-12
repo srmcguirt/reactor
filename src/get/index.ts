@@ -24,4 +24,5 @@ export * from './odd-elements-at-property'
 export * from './odd-length-words-at-property'
 export * from './smallest-element-at-property'
 export * from './squared-elements-at-property'
+export * from './string-length'
 // @endindex
