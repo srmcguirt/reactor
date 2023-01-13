@@ -7,10 +7,14 @@ export * from './filter'
 export * from './find'
 export * from './get'
 export * from './join'
+export * from './multiply'
 export * from './remove'
+export * from './repeat'
+export * from './sum'
 // @endindex
 
 // @index('./*.js', f => `export * from '${f.path}'`)
+export * from './bitwise'
 export * from './extend'
 export * from './keep'
 export * from './select'
