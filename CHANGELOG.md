@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](///compare/v0.0.6...v0.0.7) (2023-01-13)
+
+
+### Features
+
+* :construction: changed index generation to be auto. e3cd5a7
+* added coursework 7b125e4
+* added coursework 7b2047f
+* added coursework 4b6355e
+* added coursework 6bd116f
+* added coursework c7a1339
+* added coursework a26a757
+* **get:** :sparkles: added new functions 1c07846
+* updated coursework 8258fbb
+
+
+### Bug Fixes
+
+* remove magic number fc32817
+* removed console statements 757013f
+* removed prettier & md lint 62794b7
+* removed stub files b608ea7
+
 ### [0.0.6](///compare/v0.0.5...v0.0.6) (2023-01-09)
 
 ### Features
