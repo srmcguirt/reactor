@@ -7,7 +7,7 @@ module.exports = {
     project: '../tsconfig.json',
   },
   rules: {
-    // 'no-console': 'off',
+    'no-console': 'off',
     'no-unused-expressions': ['error', {
       allowShortCircuit: true,
       allowTernary: true,
