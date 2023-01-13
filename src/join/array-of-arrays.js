@@ -13,7 +13,4 @@ function joinArrayOfArrays(arr) {
   return arr.flat(1)
 }
 
-const output = joinArrayOfArrays([[1, 4], [true, false], ['x', 'y']])
-console.log(output) // --> [1, 4, true, false, 'x', 'y']
-
 export { joinArrayOfArrays }

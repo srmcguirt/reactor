@@ -13,7 +13,4 @@ function getLargestElement(arr) {
   return arrSort[0]
 }
 
-const output = getLargestElement([5, 2, 8, 3])
-console.log(output) // --> 8;
-
 export { getLargestElement }

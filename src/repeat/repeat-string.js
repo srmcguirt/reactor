@@ -8,10 +8,8 @@
 function repeatString(string, num) {
   let s = ''
 
-  for (let i = 0; i < num; i++) {
-    console.log(i)
+  for (let i = 0; i < num; i++)
     s += string
-  }
 
   return s
 }
