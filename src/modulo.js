@@ -12,36 +12,18 @@ function modulo(num1, num2) {
   // if second operand 0, return NaN
   else if (num2 === 0 || typeof num2 !== 'number' || typeof num1 !== 'number')
     return NaN
-
   // store sign of first operand
-  let isPositive = true
-  if (num1 < 0)
-    isPositive = false
+  /** @constant {boolean} */
+  const isPositive = num1 > 0
+  // get absolute values of operands and calc mod.
+  /** @constant {number} */
+  const x = Math.abs(num1)
+  /** @constant {number} */
+  const y = Math.abs(num2)
+  /** @constant {number} */
+  const result = x - y * Math.floor(x / y)
 
-  num1 = Math.abs(num1)
-  num2 = Math.abs(num2)
-
-  /**
-   * Calculate modulo.
-   *
-   * @param   {number}   n Input number.
-   * @param   {number}   d Input divisor.
-   * @returns {*|number}   Return fn or number.
-   */
-  const mod = (n, d) => {
-    /** @constant {number} */
-    const m = n - d * Math.floor(n / d)
-    return m
-  }
-
-  let result = 0
-  if (isPositive)
-    result = mod(num1, num2)
-
-  else
-    result = -mod(num1, num2)
-
-  return result
+  return isPositive ? result : -result
 }
 
 export { modulo }

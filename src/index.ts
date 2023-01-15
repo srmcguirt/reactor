@@ -1,5 +1,6 @@
 // @index(['./*.{ts,tsx}', './*/index.{ts,tsx}'], f => `export * from '${f.path.replace(/\/index$/, '')}'`)
 export * from './add'
+export * from './calculate'
 export * from './compute'
 export * from './convert'
 export * from './count'

@@ -5,4 +5,5 @@ export * from './factorial-of-n'
 export * from './product-of-all-elements'
 export * from './sum-between'
 export * from './sum-of-all-elements'
+export * from './summation-to-n'
 // @endindex
