@@ -10,35 +10,36 @@
 
 function rockPaperScissors(str) {
   var rng = Math.floor(Math.random() * 3)
-  var table = [
-    { option: 'rock', beats: 'scissors', loses: 'paper' },
-    { option: 'scissors', beats: 'paper', loses: 'rock' },
-    { option: 'paper', beats: 'rock', loses: 'scissors' },
+  var result = ''
+
+  var weapons = [
+    { name: 'rock', beats: 'scissors', loses: 'paper' },
+    { name: 'scissors', beats: 'paper', loses: 'rock' },
+    { name: 'paper', beats: 'rock', loses: 'scissors' },
   ]
+  var options = [weapons[0].name, weapons[1].name, weapons[2].name]
+  var opponent = weapons.find(({ name }) => name === options[rng])
+  var player = weapons.find(({ name }) => name === str)
 
-  var opp = table[rng].option
-  var result = (str) => {
-    var choice = table.find((v, i) => table[i].option === str)
-    console.log(choice)
+  if (typeof str !== 'string')
+    result = 'Received invalid input.'
 
-    return choice
-  }
-  switch (str) {
-    case 'paper':
-      result(str)
-      // logic
-      break
-    case 'rock':
-    // logic
-      break
-    case 'scissors':
-    // logic
-      break
-    default:
-    // logic
-      console.log(`Sorry, we got an invalid ${str}.`)
-  }
+  else if (player?.name === opponent?.name)
+    result = `${player?.name} vs ${opponent?.name}: tie!`
+
+  else if (player?.beats === opponent?.loses)
+    result = `${player?.name} vs ${opponent?.name}: ${opponent?.name} wins!`
+
+  else if (player?.loses === opponent?.beats)
+    result = `${player?.name} vs ${opponent?.name}: ${player?.name} wins!`
+
+  else
+    result = 'Unacceptable weapon choice there partner. That weapon is only available in the DLC. Please select from the broad array of options given.'
+
+  return result
 }
 
-rockPaperScissors('paper') // 'paper vs rock: paper wins!
-rockPaperScissors('rock') // 'rock vs rock: tie!'
+console.log(rockPaperScissors('rock'))
+
+for (let i = 0; i < 10; i++)
+  rockPaperScissors('rock')
