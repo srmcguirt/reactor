@@ -62,7 +62,7 @@ module.exports = {
         },
       },
     ], // Recommended
-    'jsdoc/require-param-description': 'error', // Recommended
+    'jsdoc/require-param-description': 'off', // Recommended
     'jsdoc/require-param-name': 'error', // Recommended
     'jsdoc/require-param-type': 'error', // Recommended
     'jsdoc/require-param': 'error', // Recommended
@@ -71,7 +71,7 @@ module.exports = {
     'jsdoc/require-property-name': 'error', // Recommended
     'jsdoc/require-property-type': 'error', // Recommended
     'jsdoc/require-returns-check': 'error', // Recommended
-    'jsdoc/require-returns-description': 'error', // Recommended
+    'jsdoc/require-returns-description': 'off', // Recommended
     'jsdoc/require-returns-type': 'error', // Recommended
     'jsdoc/require-returns': 'error', // Recommended
     'jsdoc/require-throws': 'error', // Recommended

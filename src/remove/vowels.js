@@ -44,3 +44,20 @@ function removeVowelsRegex(str) {
   else
     return str.replace(/[aeiou]/gi, '')
 }
+
+function removeVowelsReplace(str) {
+  var vowels = 'aeiou'
+  // create vowels array.
+  var arr = [...vowels, ...vowels.toUpperCase()]
+  return [...str].reduce((result, char) => {
+    if (!arr.includes(char))
+      result += char
+
+    else
+      result += ''
+
+    return result
+  })
+}
+
+console.log(removeVowelsReplace('rodeo drive !@#$%'))
