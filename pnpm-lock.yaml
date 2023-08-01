@@ -35,7 +35,7 @@ devDependencies:
   eslint-plugin-mdx: 2.0.5_eslint@8.31.0
   esno: 0.16.3
   lint-staged: 13.1.0
-  pnpm: 7.25.0
+  pnpm: 7.33.4
   rimraf: 4.0.5
   simple-git-hooks: 2.8.1
   standard-version: 9.5.0
@@ -4799,8 +4799,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.25.0:
-    resolution: {integrity: sha512-FGFQUON8kJ6ma39elJ8lyD8wPIfgp3opGJD9sX0TgIJk4zSr556qCgC8AN+3BFHe4yuRkEauf4JVLW2RKyyEcA==}
+  /pnpm/7.33.4:
+    resolution: {integrity: sha512-xEbf/tkwHpGM/GXq5U/sDSiE6ykLPho+o71PHNRWqkVLm6dJe4G/5Pg619Ow32ovekrr7pii5qtfamujB/+1bA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
